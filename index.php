@@ -11,7 +11,11 @@ if(isset($_POST['sub']))
         $res=$txt1+$txt2;
         echo $res;
     }
-	
+	if($oprnd=="-")
+    {
+        $res=$txt1-$txt2;
+        echo $res;
+    }
 }
 ?>
 <html>
@@ -24,6 +28,7 @@ if(isset($_POST['sub']))
         <br>
         <br>
         <input type="submit" name="sub" value="+">
+        <input type="submit" name="sub" value="-">
 
     </form>
 </html>
